@@ -25,8 +25,8 @@ Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USE
     docker start bytecoin-wallet-gui
 ***
 ## OPTIONAL
+If you want to rebuild the container yourself, run the commands:
   
-    # If you want to rebuild the container yourself, run the commands:
     docker build --build-arg USER_NAME=$USER \
     -t $USER/bytecoin-wallet-gui:latest .
 ***
