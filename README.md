@@ -8,7 +8,7 @@ You may need access to the host screen, in order to allow access - run this comm
   
     xhost +si:localuser:root
 ***
-Folder with wallet data will be created in the location - "{HOME FOLDER YOUR USER}/bytecoin-data/data/" and keep the purse files in the "{HOME FOLDER YOUR USER}/bytecoin-data/wallets/" folder
+Folder with wallet data will be created in the location - "{HOME FOLDER YOUR USER}/bytecoin-data/data/" and keep the wallets files ("*.wallet") in the "{HOME FOLDER YOUR USER}/bytecoin-data/wallets/" folder
   
     mkdir -p $HOME/bytecoin-data/data && \
     mkdir -p $HOME/bytecoin-data/wallets && \
