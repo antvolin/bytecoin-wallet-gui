@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN adduser --disabled-password --gecos '' $USER_NAME
 USER $USER_NAME
-WORKDIR /home/$USER_NAME/.bytecoin/
+WORKDIR /home/$USER_NAME
 
 CMD ["bytecoin-gui"]
