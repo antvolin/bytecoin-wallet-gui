@@ -8,12 +8,14 @@ You may need access to the host screen, in order to allow access - run this comm
   
     xhost +si:localuser:root
 ***
-Folder with wallet data will be created in the location - "<HOME FOLDER YOUR USER>/bytecoin-data/"
+Folder with wallet data will be created in the location - "{HOME FOLDER YOUR USER}/bytecoin-data/data/" and keep the purse files in the "{HOME FOLDER YOUR USER}/bytecoin-data/wallets/" folder
   
-    mkdir -p $HOME/bytecoin-data && \
+    mkdir -p $HOME/bytecoin-data/data && \
+    mkdir -p $HOME/bytecoin-data/wallets && \
     docker run -d --device /dev/dri \
     -e DISPLAY=unix$DISPLAY \
-    -v $HOME/bytecoin-data/:$HOME/.bytecoin/ \
+    -v $HOME/bytecoin-data/data/:$HOME/.bytecoin/ \
+    -v $HOME/bytecoin-data/wallets/:$HOME/wallets/ \
     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
     --name=bytecoin-wallet-gui \
     antvolin/bytecoin-wallet-gui:latest
