@@ -3,7 +3,7 @@ Dockerized wallet Bytecoin with graphical Interface
 
 ## REQUIRED
 
-#### Loading the container from the repository <https://hub.docker.com/r/antvolin/bytecoin-wallet-gui/> and the first launch of the container
+#### Loading the image from the repository <https://hub.docker.com/r/antvolin/bytecoin-wallet-gui/> and the first launch of the container
 You may need access to the host screen, in order to allow access - run this command:
   
     xhost +si:localuser:root
