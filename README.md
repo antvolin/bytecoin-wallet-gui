@@ -12,7 +12,7 @@ Folder with wallet data will be created in the location - "{HOME FOLDER YOUR USE
   
     mkdir -p $HOME/bytecoin-data/data && \
     mkdir -p $HOME/bytecoin-data/wallets && \
-    docker run -d --device /dev/dri \
+    docker run --net=host -d --device /dev/dri \
     -e DISPLAY=unix$DISPLAY \
     -v $HOME/bytecoin-data/data/:$HOME/.bytecoin/ \
     -v $HOME/bytecoin-data/wallets/:$HOME/wallets/ \
